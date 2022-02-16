@@ -11,6 +11,13 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+.player1display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bubbles {
   position: absolute;
   width: 100px;
@@ -57,10 +64,13 @@ body {
   font-size: 30px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 20px;
   border-radius: 20px 20px 20px 20px;
   position: absolute;
   top: 0;
   left: 40%;
+  padding: 15px;
 }
 .main-game {
   width: 100vw;
@@ -107,4 +117,13 @@ button.startbtn {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.timeup {
+  position: absolute;
+  display: flex;
+  background: linear-gradient(#065a74fd, #02bdbdfd);
+  top: 40%;
+  left: 44%;
+  border-radius: 20px;
+  padding: 20px;
 }
